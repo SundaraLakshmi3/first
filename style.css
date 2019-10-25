@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+html
+{
+    font-size: 12px;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow:unhidden;
+}
+h1
+{
+   width:100%;
+    height:2.5rem;
+    text-align: center;
+    font-weight:400;
+    text-transform: uppercase;
+}
+h2{
+    height:1.7rem;
+   
+    font-weight:200;
+    text-transform: uppercase;
+
+}
+a
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+ul li a:hover{
+    background:black;
+    color:plum;
+
+}
+p{
+
+    font-size: 18px;
+}
+section{
+   padding: 5rem 0;
+}
+/*header*/
+header{
+    width:100%;
+    height:5rem;
+    top:0;
+    z-index: -1;
+    background:mediumturquoise;
+}
+.container
+{
+    width:100%;
+    max-width:98rem;
+    margin:0 auto;
+    padding:0 0.8rem;
+}
+nav{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding:1rem 0;
+    border-bottom: .7px rgba(255,255,255,2.3);
+}
+.brandname
+{
+    font-size:2rem;
+    width:5rem;
+}
+.menuicon i
+{
+    font-size: 2rem;
+    color: #535353;
+    cursor:pointer;
+    
+}
+.navigationlist{
+    width:25rem;
+    height:100vh;
+    position:fixed;
+    top:0;
+    right:-26rem;
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    background:black;
+    background-color:red;
+    
+    transform:all 650ms ease-in-out;
+    
+}
+.close i
+{ 
+    color:#941e1e;
+   
+}
+.close{
+    position:absolute;
+    top:1rem;
+    left:1.5rem;
+    
+}
+.navlink{
+    margin:1.5rem 0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.maincontent
+{
+    font-family: Arial, Helvetica, sans-serif;
+    width:100%;
+    color:black;
+}
+figure.center{
+    display:block;
+   text-align: center;
+}
+p,figure{
+    line-height: normal;
+    margin-bottom: 24px;
+}
+p a:hover{
+    cursor:pointer;
+    color:blue;
+    transition: color 0.3s ease-in-out;
+}
+
+
+@media screen and (min-width:320px){
+    
+    
+    .navigation-list:active{
+        right:0;
+      }
+}
+@media screen and (min-width:780px){
+ .header{
+   
+     height:6rem;
+ }
+ .navigationlist{
+   height: 5vh;
+   background-color :transparent;
+   width:50%;
+    display:flex;
+   flex-direction:row;
+   justify-content: space-between;
+  
+}
+ .menuicon i{
+     display:none;
+ }
+ .navigationlink{
+     margin:0 2rem;
+ }
+ .maincontent{
+     max-width: 95%;
+ }
+ .navigationlist.active{
+    right:0;
+}
+}   
